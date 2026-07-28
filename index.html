@@ -3,12 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rentry — Real Estate in Tbilisi</title>
-<meta name="description" content="Long-term rentals and properties for sale in Tbilisi. Local expertise, no client fees.">
+<title data-i18n="meta.title">Rentry | Real Estate Agency in Tbilisi, Georgia</title>
+<meta name="description" data-i18n-content="meta.description" content="Rentry is a real estate agency in Tbilisi, Georgia, helping tenants, buyers, and investors find long-term rentals, homes for sale, and investment properties.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://rentry-tbilisi.netlify.app/">
+<meta name="theme-color" content="#942832">
+
+<!--
+  Multilingual note: English, Russian, and Georgian content share this single
+  URL and are toggled client-side (see script.js applyLanguage). There are no
+  separate per-language URLs, so hreflang alternates are intentionally omitted
+  here to avoid pointing search engines at incorrect/non-existent language URLs.
+  If language-specific URLs (e.g. /ru/, /ka/) are introduced later, add
+  hreflang="en"/"ru"/"ka" + "x-default" alternate links pointing to each.
+-->
+
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rentry">
+<meta property="og:title" content="Rentry | Real Estate Agency in Tbilisi, Georgia">
+<meta property="og:description" content="Real estate agency in Tbilisi, Georgia. Long-term rentals, property for sale, and investment opportunities with personalized, multilingual support.">
+<meta property="og:url" content="https://rentry-tbilisi.netlify.app/">
+<meta property="og:image" content="https://rentry-tbilisi.netlify.app/images/hero-panorama.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="ka_GE">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rentry | Real Estate Agency in Tbilisi, Georgia">
+<meta name="twitter:description" content="Real estate agency in Tbilisi, Georgia. Long-term rentals, property for sale, and investment opportunities with personalized, multilingual support.">
+<meta name="twitter:image" content="https://rentry-tbilisi.netlify.app/images/hero-panorama.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto+Condensed:wght@400;700&family=Noto+Sans+Georgian:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://rentry-tbilisi.netlify.app/#agent",
+      "name": "Rentry",
+      "url": "https://rentry-tbilisi.netlify.app/",
+      "image": "https://rentry-tbilisi.netlify.app/images/hero-panorama.jpg",
+      "description": "Rentry is a real estate agency in Tbilisi, Georgia, helping tenants, buyers, and investors find long-term rentals, homes for sale, and investment properties.",
+      "telephone": "+995593240306",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tbilisi",
+        "addressCountry": "GE"
+      },
+      "areaServed": [
+        "Tbilisi",
+        "Old Tbilisi",
+        "Vake",
+        "Vera",
+        "Saburtalo",
+        "Mtatsminda",
+        "Chugureti",
+        "Avlabari",
+        "Isani",
+        "Didi Dighomi",
+        "Ortachala"
+      ],
+      "knowsLanguage": ["en", "ka", "ru"],
+      "sameAs": [
+        "https://www.instagram.com/tbilisi.property/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rentry-tbilisi.netlify.app/#website",
+      "name": "Rentry",
+      "url": "https://rentry-tbilisi.netlify.app/",
+      "inLanguage": ["en", "ru", "ka"],
+      "publisher": { "@id": "https://rentry-tbilisi.netlify.app/#agent" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://rentry-tbilisi.netlify.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I pay a commission for your service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Our service is free for tenants and buyers — the property owner pays our agency commission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help me find a property in any district of Tbilisi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we work across every district of Tbilisi, from the historic center to the newest developments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of properties do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work with long-term rentals, apartments in new developments, and homes for sale, including investment properties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you speak English?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our team is multilingual and speaks English, Georgian, and Russian."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long can I rent a property for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialize in long-term rentals starting from 6 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help with the process after I choose a property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we support you through signing, key handover, and any questions that come up after you move in."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -71,7 +204,7 @@
           <span class="eyebrow eyebrow-accent" data-i18n-html="hero.eyebrow">REAL ESTATE<br>IN TBILISI</span>
           <p class="lead" data-i18n="hero.lead">Long-term rentals from 6 months and carefully selected properties for sale — backed by local market expertise, transparent guidance, and personalized support from your first inquiry to the moment you receive your keys.</p>
         </div>
-        <img class="photo photo-hero" src="images/hero-panorama.jpg" alt="Tbilisi panorama with Narikala fortress" width="856" height="374" loading="lazy">
+        <img class="photo photo-hero" src="images/hero-panorama.jpg" alt="Tbilisi panorama with Narikala fortress" width="856" height="374" fetchpriority="high">
 
       </div>
     </div>

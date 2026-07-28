@@ -9,6 +9,9 @@ window.RENTRY_I18N = {
 
     "cta.findProperty": "Find My Property",
 
+    "meta.title": "Rentry | Real Estate Agency in Tbilisi, Georgia",
+    "meta.description": "Rentry is a real estate agency in Tbilisi, Georgia, helping tenants, buyers, and investors find long-term rentals, homes for sale, and investment properties.",
+
     "hero.title": "Your Home in Tbilisi Starts Here",
     "hero.eyebrow": "REAL ESTATE<br>IN TBILISI",
     "hero.lead": "Long-term rentals from 6 months and carefully selected properties for sale — backed by local market expertise, transparent guidance, and personalized support from your first inquiry to the moment you receive your keys.",
@@ -126,6 +129,8 @@ window.RENTRY_I18N = {
     "legal.backHome": "Back to Homepage",
 
     "privacy.title": "Privacy Policy",
+    "privacy.metaTitle": "Privacy Policy — Rentry | Real Estate Agency in Tbilisi",
+    "privacy.metaDescription": "How Rentry, a real estate agency in Tbilisi, Georgia, collects, uses, and protects the information you share with us.",
     "privacy.updated": "Last updated: July 25, 2026",
     "privacy.intro": "Rentry (\"we\", \"us\", or \"our\") helps people find long-term rental and for-sale properties in Tbilisi, Georgia. This Privacy Policy explains what information we collect through rentry.ge, how we use it, and the choices you have.",
     "privacy.s1.title": "Information We Collect",
@@ -144,6 +149,8 @@ window.RENTRY_I18N = {
     "privacy.s7.text": "If you have questions about this Privacy Policy or how we handle your information, contact us at +995 593 240 306.",
 
     "terms.title": "Terms of Service",
+    "terms.metaTitle": "Terms of Service — Rentry | Real Estate Agency in Tbilisi",
+    "terms.metaDescription": "The terms that govern your use of Rentry's real estate services in Tbilisi, Georgia, including property search, rentals, and sales.",
     "terms.updated": "Last updated: July 25, 2026",
     "terms.intro": "These Terms of Service (\"Terms\") govern your use of rentry.ge and the property search services we provide in Tbilisi, Georgia. By contacting us or using our site, you agree to these Terms.",
     "terms.s1.title": "Our Service",
@@ -172,6 +179,9 @@ window.RENTRY_I18N = {
     "nav.faq": "Вопросы",
 
     "cta.findProperty": "Найти недвижимость",
+
+    "meta.title": "Rentry | Агентство недвижимости в Тбилиси, Грузия",
+    "meta.description": "Rentry — агентство недвижимости в Тбилиси, Грузия. Помогаем арендаторам, покупателям и инвесторам найти долгосрочную аренду, жильё на продажу и инвестиционную недвижимость.",
 
     "hero.title": "Ваш дом в Тбилиси начинается здесь",
     "hero.eyebrow": "НЕДВИЖИМОСТЬ<br>В ТБИЛИСИ",
@@ -290,6 +300,8 @@ window.RENTRY_I18N = {
     "legal.backHome": "Вернуться на главную",
 
     "privacy.title": "Политика конфиденциальности",
+    "privacy.metaTitle": "Политика конфиденциальности — Rentry | Агентство недвижимости в Тбилиси",
+    "privacy.metaDescription": "Как Rentry, агентство недвижимости в Тбилиси, Грузия, собирает, использует и защищает предоставленную вами информацию.",
     "privacy.updated": "Обновлено: 25 июля 2026 г.",
     "privacy.intro": "Rentry («мы», «нас», «наш») помогает людям найти долгосрочную аренду и недвижимость на продажу в Тбилиси, Грузия. Эта Политика конфиденциальности объясняет, какую информацию мы собираем на сайте rentry.ge, как мы её используем и какой у вас есть выбор.",
     "privacy.s1.title": "Какую информацию мы собираем",
@@ -308,6 +320,8 @@ window.RENTRY_I18N = {
     "privacy.s7.text": "Если у вас есть вопросы об этой Политике конфиденциальности или о том, как мы обрабатываем ваши данные, позвоните нам по номеру +995 593 240 306.",
 
     "terms.title": "Условия использования",
+    "terms.metaTitle": "Условия использования — Rentry | Агентство недвижимости в Тбилиси",
+    "terms.metaDescription": "Условия, регулирующие использование услуг Rentry в сфере недвижимости в Тбилиси, Грузия, включая подбор, аренду и продажу жилья.",
     "terms.updated": "Обновлено: 25 июля 2026 г.",
     "terms.intro": "Настоящие Условия использования («Условия») регулируют использование сайта rentry.ge и услуг по поиску недвижимости, которые мы предоставляем в Тбилиси, Грузия. Обращаясь к нам или используя наш сайт, вы соглашаетесь с этими Условиями.",
     "terms.s1.title": "Наши услуги",
@@ -336,6 +350,9 @@ window.RENTRY_I18N = {
     "nav.faq": "კითხვები",
 
     "cta.findProperty": "იპოვე უძრავი ქონება",
+
+    "meta.title": "Rentry | უძრავი ქონების სააგენტო თბილისში, საქართველო",
+    "meta.description": "Rentry არის უძრავი ქონების სააგენტო თბილისში, საქართველო, რომელიც ეხმარება მდგმურებს, მყიდველებს და ინვესტორებს იპოვონ გრძელვადიანი გასაქირავებელი, გასაყიდი ბინები და საინვესტიციო ქონება.",
 
     "hero.title": "თქვენი სახლი თბილისში იწყება აქ",
     "hero.eyebrow": "უძრავი ქონება<br>თბილისში",
@@ -454,6 +471,8 @@ window.RENTRY_I18N = {
     "legal.backHome": "მთავარ გვერდზე დაბრუნება",
 
     "privacy.title": "კონფიდენციალურობის პოლიტიკა",
+    "privacy.metaTitle": "კონფიდენციალურობის პოლიტიკა — Rentry | უძრავი ქონების სააგენტო თბილისში",
+    "privacy.metaDescription": "როგორ აგროვებს, იყენებს და იცავს Rentry, უძრავი ქონების სააგენტო თბილისში, საქართველო, თქვენ მიერ მოწოდებულ ინფორმაციას.",
     "privacy.updated": "განახლებულია: 2026 წლის 25 ივლისი",
     "privacy.intro": "Rentry (\"ჩვენ\", \"ჩვენი\") ეხმარება ადამიანებს იპოვონ გრძელვადიანი ქირავნობის ან გასაყიდი უძრავი ქონება თბილისში, საქართველო. ეს კონფიდენციალურობის პოლიტიკა განმარტავს, თუ რა ინფორმაციას ვაგროვებთ საიტ rentry.ge-ზე, როგორ ვიყენებთ მას და რა არჩევანი გაქვთ თქვენ.",
     "privacy.s1.title": "რა ინფორმაციას ვაგროვებთ",
@@ -472,6 +491,8 @@ window.RENTRY_I18N = {
     "privacy.s7.text": "თუ გაქვთ შეკითხვები ამ კონფიდენციალურობის პოლიტიკის ან თქვენი მონაცემების დამუშავების შესახებ, დაგვირეკეთ +995 593 240 306-ზე.",
 
     "terms.title": "მომსახურების პირობები",
+    "terms.metaTitle": "მომსახურების პირობები — Rentry | უძრავი ქონების სააგენტო თბილისში",
+    "terms.metaDescription": "პირობები, რომლებიც არეგულირებს Rentry-ის უძრავი ქონების მომსახურების გამოყენებას თბილისში, საქართველო, მათ შორის ძებნას, გაქირავებას და გაყიდვას.",
     "terms.updated": "განახლებულია: 2026 წლის 25 ივლისი",
     "terms.intro": "წინამდებარე მომსახურების პირობები (\"პირობები\") არეგულირებს საიტ rentry.ge-ს გამოყენებას და უძრავი ქონების ძიების მომსახურებას, რომელსაც ჩვენ ვთავაზობთ თბილისში, საქართველო. ჩვენთან დაკავშირებით ან საიტის გამოყენებით თქვენ ეთანხმებით წინამდებარე პირობებს.",
     "terms.s1.title": "ჩვენი მომსახურება",

@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
       if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
     });
 
+    document.querySelectorAll('[data-i18n-content]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-content');
+      if (dict[key] !== undefined) el.setAttribute('content', dict[key]);
+    });
+
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
       btn.classList.toggle('is-active', btn.getAttribute('data-lang') === lang);
     });

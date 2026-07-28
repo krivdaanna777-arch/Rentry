@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /_debug_ka.html
+Disallow: /_debug_ru.html
+Disallow: /_debug_measure.html
+
+Sitemap: https://rentry-tbilisi.netlify.app/sitemap.xml
