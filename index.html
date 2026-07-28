@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rentry — Real Estate in Tbilisi</title>
+<meta name="description" content="Long-term rentals and properties for sale in Tbilisi. Local expertise, no client fees.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto+Condensed:wght@400;700&family=Noto+Sans+Georgian:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo">RENTRY</a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#advantages" data-i18n="nav.advantages">Advantages</a></li>
+        <li><a href="#process" data-i18n="nav.process">Process</a></li>
+        <li><a href="#contacts" data-i18n="nav.contacts">Contacts</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contacts" class="btn btn-primary btn-sm header-cta" data-i18n="cta.findProperty">Find My Property</a>
+
+    <div class="lang-switch" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-btn" data-lang="ka">GE</button>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <ul>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#advantages" data-i18n="nav.advantages">Advantages</a></li>
+      <li><a href="#process" data-i18n="nav.process">Process</a></li>
+      <li><a href="#contacts" data-i18n="nav.contacts">Contacts</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+    </ul>
+    <div class="lang-switch lang-switch--mobile" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-btn" data-lang="ka">GE</button>
+    </div>
+    <a href="#contacts" class="btn btn-primary" data-i18n="cta.findProperty">Find My Property</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-top">
+        <h1 class="hero-title" data-i18n="hero.title">Your Home in Tbilisi Starts Here</h1>
+        <a href="#contacts" class="btn btn-primary btn-lg" data-i18n="cta.findProperty">Find My Property</a>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow-accent" data-i18n-html="hero.eyebrow">REAL ESTATE<br>IN TBILISI</span>
+          <p class="lead" data-i18n="hero.lead">Long-term rentals from 6 months and carefully selected properties for sale — backed by local market expertise, transparent guidance, and personalized support from your first inquiry to the moment you receive your keys.</p>
+        </div>
+        <img class="photo photo-hero" src="images/hero-panorama.jpg" alt="Tbilisi panorama with Narikala fortress" width="856" height="374" loading="lazy">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WE HELP PEOPLE -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="split-row split-row--top">
+        <h2 class="section-title section-title--wrap" data-i18n="about.title">We help people find the right property across every district of Tbilisi, with support at every stage of the search.</h2>
+        <p class="lead lead-side lead-side--about" data-i18n="about.lead">Looking for a long-term rental, a property to buy, or an investment opportunity in Tbilisi? We help you navigate the local market and find options that fit your needs, budget, and plans.</p>
+      </div>
+
+      <div class="photo-duo">
+        <img class="photo photo-sm" src="images/we-help-small.jpg" alt="Pomegranates in a basket, Tbilisi market" width="339" height="219" loading="lazy">
+        <img class="photo photo-lg" src="images/we-help-large.jpg" alt="Mother Georgia statue overlooking Tbilisi" width="856" height="554" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUR LOCAL REAL ESTATE EXPERTS -->
+  <section class="section" id="advantages">
+    <div class="container">
+      <h2 class="section-title" data-i18n="advantages.title">Your Local Real Estate Experts
+        in Tbilisi</h2>
+
+      <div class="experts-row">
+        <video class="photo photo-lg" src="images/hf_20260725_061800_9eb150b2-f605-47e9-9f69-a890fe5c1163.mp4" width="856" height="554" autoplay loop muted playsinline aria-label="Cable car over Tbilisi"></video>
+        <div class="experts-text">
+          <p class="lead" data-i18n="advantages.lead1">You know what you want. We know where to find it.</p>
+          <p class="lead" data-i18n="advantages.lead2">From carefully selected properties and private viewings to negotiations and paperwork, we'll take care of every step — whether you're renting or buying, from your first viewing to the final deal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIX REASONS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="reasons.title">Six Reasons</h2>
+
+      <div class="reasons-grid">
+        <ol class="reasons-col">
+          <li class="reason">
+            <span class="reason-num">01</span>
+            <div class="reason-body">
+              <h3 class="reason-title" data-i18n="reasons.r1.title">Curated Selection</h3>
+              <p class="reason-text" data-i18n="reasons.r1.text">We focus on properties that match your budget, lifestyle, and goals — not just what's currently available.</p>
+            </div>
+          </li>
+          <li class="reason">
+            <span class="reason-num">02</span>
+            <div class="reason-body">
+              <h3 class="reason-title" data-i18n="reasons.r2.title">Save Your Time</h3>
+              <p class="reason-text" data-i18n="reasons.r2.text">We shortlist the most relevant options so you can spend less time searching and more time choosing.</p>
+            </div>
+          </li>
+          <li class="reason">
+            <span class="reason-num">03</span>
+            <div class="reason-body">
+              <h3 class="reason-title" data-i18n="reasons.r3.title">Honest Advice</h3>
+              <p class="reason-text" data-i18n="reasons.r3.text">We tell you what we really think — including the pros, cons, and potential concerns of every property.</p>
+            </div>
+          </li>
+        </ol>
+
+        <ol class="reasons-col" start="4">
+          <li class="reason">
+            <span class="reason-num">04</span>
+            <div class="reason-body">
+              <h3 class="reason-title" data-i18n="reasons.r4.title">Local Knowledge</h3>
+              <p class="reason-text" data-i18n="reasons.r4.text">We know Tbilisi beyond the listings and help you understand the character, advantages, and value of each neighborhood.</p>
+            </div>
+          </li>
+          <li class="reason">
+            <span class="reason-num">05</span>
+            <div class="reason-body">
+              <h3 class="reason-title" data-i18n="reasons.r5.title">Clear Process</h3>
+              <p class="reason-text" data-i18n="reasons.r5.text">Every step of the process — from search to signing — stays clear, organized, and easy to understand.</p>
+            </div>
+          </li>
+          <li class="reason">
+            <span class="reason-num">06</span>
+            <div class="reason-body">
+              <h3 class="reason-title" data-i18n="reasons.r6.title">Long-Term Care</h3>
+              <p class="reason-text" data-i18n="reasons.r6.text">Our relationship doesn't end when you get the keys. We're here to help with questions that come up after the move.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="split-row split-row--end reasons-footer">
+        <p class="lead lead-side" data-i18n-html="reasons.footer">Every neighborhood in Tbilisi has its own rhythm, character, and value — from the historic streets of Old Tbilisi to the city's most dynamic new districts.<br><br>Because finding the right property starts with finding the right place.</p>
+        <img class="photo photo-lg" src="images/reasons-cat.jpg" alt="Cat on a balcony railing in Tbilisi" width="856" height="554" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- NO CLIENT FEES -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="fees-top">
+        <div class="fees-copy">
+          <h2 class="section-title" data-i18n="fees.title">No Client Fees</h2>
+          <p class="lead" data-i18n="fees.lead">Our service is free for you. The property owner pays our agency commission, so you can get professional support without an extra fee.</p>
+          <a href="#contacts" class="btn btn-primary btn-lg" data-i18n="fees.cta">Start Your Search</a>
+        </div>
+        <img class="photo photo-sm fees-photo" src="images/fees-jewelry.jpg" alt="Antique jewelry and china at a Tbilisi flea market" width="339" height="219" loading="lazy">
+      </div>
+
+      <div class="cards-row">
+        <div class="card">
+          <h3 class="card-title" data-i18n="card.rent.title">Rent</h3>
+          <p class="card-text" data-i18n="card.rent.text">Find a long-term home in Tbilisi that fits
+your lifestyle, budget, and everyday
+needs.</p>
+        </div> 
+        <div class="card">
+          <h3 class="card-title" data-i18n="card.buy.title">Buy</h3>
+          <p class="card-text" data-i18n="card.buy.text">Explore properties to buy in Tbilisi for
+living, relocation, or building your
+future home.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title" data-i18n="card.invest.title">Invest</h3>
+          <p class="card-text" data-i18n="card.invest.text">Discover properties with investment
+potential and make informed decisions
+about your next move.</p>
+        </div>
+      </div>
+
+      <div class="split-row fees-footer">
+        <img class="photo photo-lg" src="images/fees-church.jpg" alt="Historic church in Tbilisi" width="856" height="554" loading="lazy">
+        <p class="lead lead-side" data-i18n="fees.footer">Feel at home in Tbilisi. We'll take care of everything you need to settle in comfortably and make the most of your new life here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title section-title--center" data-i18n="howitworks.title">How It Works</h2>
+
+      <div class="steps-row">
+        <img class="photo photo-sm photo-sm--steps" src="images/howitworks-cat.jpg" alt="Cat resting on a traditional carpet" width="339" height="219" loading="lazy">
+
+        <div class="steps">
+          <div class="step">
+            <h3 class="step-title" data-i18n="step.s1.title">Tell Us What You Need</h3>
+            <p class="step-text" data-i18n="step.s1.text">Tell us your budget, preferred location and what matters to you.</p>
+          </div>
+          <div class="step">
+            <h3 class="step-title" data-i18n="step.s2.title">Get Your Shortlist</h3>
+            <p class="step-text" data-i18n="step.s2.text">We select the best available options that match your criteria.</p>
+          </div>
+          <div class="step">
+            <h3 class="step-title" data-i18n="step.s3.title">View The Properties</h3>
+            <p class="step-text" data-i18n="step.s3.text">We arrange viewings and help you compare the options before making your decision.</p>
+          </div>
+          <div class="step">
+            <h3 class="step-title" data-i18n="step.s4.title">Choose Your Property</h3>
+            <p class="step-text" data-i18n="step.s4.text">Once you've found the right place, we guide you through the next steps and help coordinate the deal.</p>
+          </div>
+          <div class="step step--last">
+            <h3 class="step-title" data-i18n="step.s5.title">Get The Keys</h3>
+            <p class="step-text" data-i18n="step.s5.text">Complete the final steps, receive your keys, and settle into your new place in Tbilisi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- READY TO FIND YOUR PLACE / CONTACT -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <h2 class="section-title" data-i18n-html="contacts.title">Ready to Find Your<br>Place in Tbilisi?</h2>
+
+      <div class="contact-row">
+        <div class="contact-left">
+          <p class="lead" data-i18n="contacts.lead">Tell us what you're looking for, and we'll help you find the right property — without the stress or the extra agency fee.</p>
+
+          <div class="trust-stats">
+            <div class="stat">
+              <span class="stat-title" data-i18n="stat.tbilisi.title">All Tbilisi</span>
+              <span class="stat-text" data-i18n="stat.tbilisi.text">Properties across every district</span>
+            </div>
+            <span class="stat-divider" aria-hidden="true"></span>
+            <div class="stat">
+              <span class="stat-title" data-i18n="stat.months.title">6+ Months</span>
+              <span class="stat-text" data-i18n="stat.months.text">Long-term rentals</span>
+            </div>
+            <span class="stat-divider" aria-hidden="true"></span>
+            <div class="stat">
+              <span class="stat-title" data-i18n="stat.languages.title">3 Languages</span>
+              <span class="stat-text" data-i18n-html="stat.languages.text">English &middot; Georgian &middot; Russian</span>
+            </div>
+          </div>
+
+          <div class="direct-block">
+            <div class="direct-social">
+              <span class="direct-heading" data-i18n="direct.heading">Or Message Us Directly</span>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.instagram.com/tbilisi.property/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <img src="icons/instagram.svg" alt="" width="36" height="36">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/995593240306" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <img src="icons/whatsapp.svg" alt="" width="36" height="36">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Telegram">
+                    <img src="icons/telegram.svg" alt="" width="36" height="36">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="direct-phone-block">
+              <span class="direct-heading" data-i18n="direct.phoneLabel">Phone</span>
+              <a href="tel:+995593240306" class="direct-phone">+995 593 240 306</a>
+              <span class="direct-note" data-i18n="direct.note">Usually replies within 15 minutes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-panel">
+          <span class="form-tag" data-i18n="form.tag">Free Consultation &middot; No Obligation</span>
+
+          <form class="lead-form" id="lead-form" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="name"><span data-i18n="form.name.label">Name</span> <span class="req">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your name" data-i18n-placeholder="form.name.placeholder" required>
+              </div>
+              <div class="field">
+                <label for="phone"><span data-i18n="form.phone.label">Phone / WhatsApp</span> <span class="req">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+995 5XX XXX XXX" inputmode="numeric" required>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="budget"><span data-i18n="form.budget.label">Budget</span> <span class="opt" data-i18n="form.optional">(optional)</span></label>
+                <select id="budget" name="budget">
+                  <option value="" selected data-i18n="form.budget.placeholder">Select your budget</option>
+                  <option value="under-500" data-i18n="form.budget.opt1">Under $500 / month</option>
+                  <option value="500-1000" data-i18n="form.budget.opt2">$500 – $1,000 / month</option>
+                  <option value="1000-2000" data-i18n="form.budget.opt3">$1,000 – $2,000 / month</option>
+                  <option value="2000-plus" data-i18n="form.budget.opt4">$2,000+ / month</option>
+                  <option value="buy-under-100k" data-i18n="form.budget.opt5">Buy: under $100,000</option>
+                  <option value="buy-100k-300k" data-i18n="form.budget.opt6">Buy: $100,000 – $300,000</option>
+                  <option value="buy-300k-plus" data-i18n="form.budget.opt7">Buy: $300,000+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="looking-to"><span data-i18n="form.lookingTo.label">Looking To</span> <span class="opt" data-i18n="form.optional">(optional)</span></label>
+                <select id="looking-to" name="looking-to">
+                  <option value="" selected data-i18n="form.lookingTo.placeholder">Rent, buy or invest?</option>
+                  <option value="rent" data-i18n="form.lookingTo.rent">Rent</option>
+                  <option value="buy" data-i18n="form.lookingTo.buy">Buy</option>
+                  <option value="invest" data-i18n="form.lookingTo.invest">Invest</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="comment"><span data-i18n="form.comment.label">Comment</span> <span class="opt" data-i18n="form.optional">(optional)</span></label>
+              <textarea id="comment" name="comment" rows="4" placeholder="Tell us what you are looking for" data-i18n-placeholder="form.comment.placeholder"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit" data-i18n="cta.findProperty">Find My Property</button>
+
+            <p class="privacy-note" data-i18n="form.privacy">We respect your privacy — your details are never shared with third parties.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <h2 class="section-title" data-i18n="faq.title">Common Questions</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq.q1">Do I pay a commission for your service?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq.a1">No. Our service is free for tenants and buyers — the property owner pays our agency commission.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq.q2">Can you help me find a property in any district of Tbilisi?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq.a2">Yes, we work across every district of Tbilisi, from the historic center to the newest developments.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq.q3">What types of properties do you work with?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq.a3">We work with long-term rentals, apartments in new developments, and homes for sale, including investment properties.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq.q4">Do you speak English?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq.a4">Yes, our team is multilingual and speaks English, Georgian, and Russian.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq.q5">How long can I rent a property for?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq.a5">We specialize in long-term rentals starting from 6 months.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq.q6">Can you help with the process after I choose a property?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq.a6">Yes, we support you through signing, key handover, and any questions that come up after you move in.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">RENTRY</span>
+        <p data-i18n="footer.tagline">We help you find a home that truly fits your life in Tbilisi.</p>
+        <ul class="footer-socials">
+          <li>
+            <a href="https://www.instagram.com/tbilisi.property/" target="_blank" rel="noopener" aria-label="Instagram">
+              <img src="icons/instagram-footer.svg" alt="" width="36" height="36">
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/995593240306" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <img src="icons/whatsapp-footer.svg" alt="" width="36" height="36">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Telegram">
+              <img src="icons/telegram-footer.svg" alt="" width="20" height="20">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.nav.heading">Navigation</h3>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#advantages" data-i18n="nav.advantages">Advantages</a></li>
+          <li><a href="#process" data-i18n="nav.process">Process</a></li>
+          <li><a href="#contacts" data-i18n="nav.contacts">Contacts</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.contact.heading">Contact</h3>
+        <ul>
+          <li><a href="tel:+995593240306">+995 593 240 306</a></li>
+          <li data-i18n="footer.address">Tbilisi, Georgia</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.legal.heading">Legal</h3>
+        <ul>
+          <li><a href="privacy-policy.html" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" data-i18n="footer.legal.terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 Rentry. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
