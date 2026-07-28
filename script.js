@@ -148,9 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (leadForm) {
     leadForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Thank you! We will contact you shortly.');
-      leadForm.reset();
+      e.preventDefault(); var formData = new FormData(leadForm); fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(formData).toString() }).then(function () { alert('Thank you! We will contact you shortly.'); leadForm.reset(); }).catch(function () { alert('Something went wrong, please try again or contact us via WhatsApp.'); });
     });
   }
 
