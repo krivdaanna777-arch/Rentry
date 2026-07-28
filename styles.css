@@ -701,6 +701,45 @@ section[id]{ scroll-margin-top: 110px; }
 
 .privacy-note{ font-size: 11px; color: var(--c-text-muted); text-align: center; margin: 18px 0 0; }
 
+.form-success{ padding: 40px 0; }
+
+.form-success:not([hidden]){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.form-success-icon{ color: var(--c-accent); margin-bottom: 20px; }
+
+.form-success-title{
+  font-family: var(--font-condensed);
+  font-stretch: condensed;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #fff;
+  margin: 0 0 12px;
+}
+
+.form-success-text{
+  font-size: 14px;
+  color: var(--c-text-muted);
+  max-width: 380px;
+  margin: 0 0 28px;
+}
+
+.form-success-btn{
+  width: auto;
+  padding: 0 28px;
+  height: 50px;
+  font-size: 12px;
+  color: #fff;
+  background: linear-gradient(90deg, var(--c-accent), var(--c-accent-dark));
+}
+
+.form-success-btn:hover{ opacity: 0.9; }
+
 /* FAQ */
 
 .faq-section{ margin-top: 100px; }
@@ -917,6 +956,13 @@ section[id]{ scroll-margin-top: 110px; }
   .contact-row{ flex-direction: column; }
   .contact-left{ max-width: none; }
   .form-panel{ max-width: none; }
+
+  /* iOS Safari auto-zooms the page on focus when an input's font-size is
+     under 16px — this reads as the whole form "scaling". Bump to 16px
+     here only, so desktop keeps its smaller 13px styling. */
+  .lead-form input,
+  .lead-form select,
+  .lead-form textarea{ font-size: 16px; }
 
   .accordion{ grid-template-columns: 1fr; }
 

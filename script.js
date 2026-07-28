@@ -143,12 +143,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---------- Lead form submit (placeholder) ---------- */
+  /* ---------- Lead form submit ---------- */
   var leadForm = document.getElementById('lead-form');
+  var leadFormSuccess = document.getElementById('lead-form-success');
+  var leadFormReset = document.getElementById('lead-form-reset');
 
   if (leadForm) {
     leadForm.addEventListener('submit', function (e) {
-      e.preventDefault(); var formData = new FormData(leadForm); fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(formData).toString() }).then(function () { alert('Thank you! We will contact you shortly.'); leadForm.reset(); }).catch(function () { alert('Something went wrong, please try again or contact us via WhatsApp.'); });
+      e.preventDefault();
+      var formData = new FormData(leadForm);
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(formData).toString() })
+        .then(function () {
+          leadForm.reset();
+          if (leadFormSuccess) {
+            leadForm.hidden = true;
+            leadFormSuccess.hidden = false;
+            leadFormSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        })
+        .catch(function () {
+          var dict = i18n[currentLang] || {};
+          alert(dict['form.error'] || 'Something went wrong, please try again or contact us via WhatsApp.');
+        });
+    });
+  }
+
+  if (leadFormReset) {
+    leadFormReset.addEventListener('click', function () {
+      leadFormSuccess.hidden = true;
+      leadForm.hidden = false;
     });
   }
 

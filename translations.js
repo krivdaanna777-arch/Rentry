@@ -95,6 +95,10 @@ window.RENTRY_I18N = {
     "form.comment.placeholder": "Tell us what you are looking for",
     "form.optional": "(optional)",
     "form.privacy": "We respect your privacy — your details are never shared with third parties.",
+    "form.success.title": "Thank You!",
+    "form.success.text": "Your request has been sent. Our team will contact you shortly.",
+    "form.success.btn": "Send Another Request",
+    "form.error": "Something went wrong, please try again or contact us via WhatsApp.",
 
     "faq.title": "Common Questions",
     "faq.q1": "Do I pay a commission for your service?",
@@ -255,6 +259,10 @@ window.RENTRY_I18N = {
     "form.comment.placeholder": "Расскажите, что вы ищете",
     "form.optional": "(необязательно)",
     "form.privacy": "Мы уважаем вашу конфиденциальность — ваши данные никогда не передаются третьим лицам.",
+    "form.success.title": "Спасибо!",
+    "form.success.text": "Ваша заявка отправлена. Наша команда свяжется с вами в ближайшее время.",
+    "form.success.btn": "Отправить ещё одну заявку",
+    "form.error": "Что-то пошло не так, попробуйте ещё раз или свяжитесь с нами через WhatsApp.",
 
     "faq.title": "Частые вопросы",
     "faq.q1": "Я плачу комиссию за ваши услуги?",
@@ -415,6 +423,10 @@ window.RENTRY_I18N = {
     "form.comment.placeholder": "გვითხარით, რას ეძებთ",
     "form.optional": "(არასავალდებულო)",
     "form.privacy": "ჩვენ პატივს ვცემთ თქვენს კონფიდენციალურობას — თქვენი მონაცემები არასდროს გადაეცემა მესამე მხარეს.",
+    "form.success.title": "გმადლობთ!",
+    "form.success.text": "თქვენი მოთხოვნა გაიგზავნა. ჩვენი გუნდი მალე დაგიკავშირდებათ.",
+    "form.success.btn": "ახალი მოთხოვნის გაგზავნა",
+    "form.error": "დაფიქსირდა შეცდომა, სცადეთ ხელახლა ან დაგვიკავშირდით WhatsApp-ის საშუალებით.",
 
     "faq.title": "ხშირად დასმული კითხვები",
     "faq.q1": "ვიხდი კომისიას თქვენი მომსახურებისთვის?",
