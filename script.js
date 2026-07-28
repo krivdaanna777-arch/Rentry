@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
       burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
-    document.querySelectorAll('.mobile-nav a').forEach(function (link) {
+    document.querySelectorAll('.mobile-nav a, .mobile-nav .js-open-lead-modal').forEach(function (link) {
       link.addEventListener('click', function () {
         header.classList.remove('nav-open');
         burger.setAttribute('aria-expanded', 'false');
@@ -118,9 +118,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /* ---------- Phone mask: +995 5XX XXX XXX ---------- */
-  var phoneInput = document.getElementById('phone');
+  function initPhoneMask(phoneInput) {
+    if (!phoneInput) return;
 
-  if (phoneInput) {
     phoneInput.addEventListener('input', function () {
       var digits = phoneInput.value.replace(/\D/g, '');
 
@@ -143,22 +143,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---------- Lead form submit ---------- */
-  var leadForm = document.getElementById('lead-form');
-  var leadFormSuccess = document.getElementById('lead-form-success');
-  var leadFormReset = document.getElementById('lead-form-reset');
+  initPhoneMask(document.getElementById('phone'));
+  initPhoneMask(document.getElementById('modal-phone'));
 
-  if (leadForm) {
-    leadForm.addEventListener('submit', function (e) {
+  /* ---------- Lead form submit ---------- */
+  function initLeadForm(formId, successId, resetId) {
+    var form = document.getElementById(formId);
+    var success = document.getElementById(successId);
+    var resetBtn = document.getElementById(resetId);
+
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var formData = new FormData(leadForm);
+      var formData = new FormData(form);
       fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(formData).toString() })
         .then(function () {
-          leadForm.reset();
-          if (leadFormSuccess) {
-            leadForm.hidden = true;
-            leadFormSuccess.hidden = false;
-            leadFormSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          form.reset();
+          if (success) {
+            form.hidden = true;
+            success.hidden = false;
+            success.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
         })
         .catch(function () {
@@ -166,12 +171,84 @@ document.addEventListener('DOMContentLoaded', function () {
           alert(dict['form.error'] || 'Something went wrong, please try again or contact us via WhatsApp.');
         });
     });
+
+    if (resetBtn && success) {
+      resetBtn.addEventListener('click', function () {
+        success.hidden = true;
+        form.hidden = false;
+      });
+    }
   }
 
-  if (leadFormReset) {
-    leadFormReset.addEventListener('click', function () {
-      leadFormSuccess.hidden = true;
-      leadForm.hidden = false;
+  initLeadForm('lead-form', 'lead-form-success', 'lead-form-reset');
+  initLeadForm('modal-lead-form', 'modal-lead-form-success', 'modal-lead-form-reset');
+
+  /* ---------- Lead modal ---------- */
+  var leadModal = document.getElementById('lead-modal');
+  var leadModalDialog = leadModal ? leadModal.querySelector('.modal-dialog') : null;
+  var leadModalClose = document.getElementById('lead-modal-close');
+  var leadModalLastFocused = null;
+
+  function openLeadModal() {
+    if (!leadModal) return;
+
+    leadModalLastFocused = document.activeElement;
+    leadModal.hidden = false;
+    document.body.classList.add('modal-open');
+
+    requestAnimationFrame(function () {
+      leadModal.classList.add('is-open');
+    });
+
+    var firstField = document.getElementById('modal-name');
+    if (firstField) firstField.focus();
+  }
+
+  function closeLeadModal() {
+    if (!leadModal || leadModal.hidden) return;
+
+    leadModal.classList.remove('is-open');
+    document.body.classList.remove('modal-open');
+
+    setTimeout(function () { leadModal.hidden = true; }, 250);
+
+    if (leadModalLastFocused) leadModalLastFocused.focus();
+  }
+
+  document.querySelectorAll('.js-open-lead-modal').forEach(function (trigger) {
+    trigger.addEventListener('click', openLeadModal);
+  });
+
+  if (leadModalClose) leadModalClose.addEventListener('click', closeLeadModal);
+
+  if (leadModal) {
+    leadModal.addEventListener('click', function (e) {
+      if (e.target === leadModal) closeLeadModal();
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape' || !leadModal || leadModal.hidden) return;
+    closeLeadModal();
+  });
+
+  if (leadModalDialog) {
+    leadModalDialog.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab') return;
+
+      var focusable = leadModalDialog.querySelectorAll('button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+      if (!focusable.length) return;
+
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     });
   }
 

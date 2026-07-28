@@ -321,7 +321,8 @@ section[id]{ scroll-margin-top: 110px; }
   color: var(--c-text);
 }
 
-.mobile-nav a.btn{ color: #fff; }
+.mobile-nav a.btn,
+.mobile-nav button.btn{ color: #fff; }
 
 .mobile-nav .btn{ width: 100%; height: 50px; font-size: 12px; }
 
@@ -739,6 +740,73 @@ section[id]{ scroll-margin-top: 110px; }
 }
 
 .form-success-btn:hover{ opacity: 0.9; }
+
+/* ============================================================
+   LEAD MODAL
+   ============================================================ */
+
+.modal-overlay{
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(20, 20, 20, 0.6);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay[hidden]{ display: none; }
+
+.modal-overlay.is-open{ opacity: 1; }
+
+.modal-dialog{
+  position: relative;
+  width: 100%;
+  max-width: 604px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  background: var(--c-dark);
+  padding: 40px;
+  border: 1px solid #3a3a3a;
+  transform: translateY(16px);
+  transition: transform 0.25s ease;
+}
+
+.modal-overlay.is-open .modal-dialog{ transform: translateY(0); }
+
+.modal-close{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.modal-close:hover{ opacity: 0.7; }
+
+body.modal-open{ overflow: hidden; }
+
+@media (max-width: 560px){
+  .modal-overlay{ padding: 0; }
+
+  .modal-dialog{
+    max-width: none;
+    max-height: 100vh;
+    height: 100%;
+    padding: 24px;
+  }
+}
 
 /* FAQ */
 

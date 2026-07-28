@@ -26,7 +26,7 @@
       </ul>
     </nav>
 
-    <a href="#contacts" class="btn btn-primary btn-sm header-cta" data-i18n="cta.findProperty">Find My Property</a>
+    <button type="button" class="btn btn-primary btn-sm header-cta js-open-lead-modal" aria-haspopup="dialog" data-i18n="cta.findProperty">Find My Property</button>
 
     <div class="lang-switch" aria-label="Language">
       <button type="button" class="lang-btn" data-lang="en">EN</button>
@@ -52,7 +52,7 @@
       <button type="button" class="lang-btn" data-lang="ru">RU</button>
       <button type="button" class="lang-btn" data-lang="ka">GE</button>
     </div>
-    <a href="#contacts" class="btn btn-primary" data-i18n="cta.findProperty">Find My Property</a>
+    <button type="button" class="btn btn-primary js-open-lead-modal" aria-haspopup="dialog" data-i18n="cta.findProperty">Find My Property</button>
   </nav>
 </header>
 
@@ -63,7 +63,7 @@
     <div class="container">
       <div class="hero-top">
         <h1 class="hero-title" data-i18n="hero.title">Your Home in Tbilisi Starts Here</h1>
-        <a href="#contacts" class="btn btn-primary btn-lg" data-i18n="cta.findProperty">Find My Property</a>
+        <button type="button" class="btn btn-primary btn-lg js-open-lead-modal" aria-haspopup="dialog" data-i18n="cta.findProperty">Find My Property</button>
       </div>
 
       <div class="hero-bottom">
@@ -177,7 +177,7 @@
         <div class="fees-copy">
           <h2 class="section-title" data-i18n="fees.title">No Client Fees</h2>
           <p class="lead" data-i18n="fees.lead">Our service is free for you. The property owner pays our agency commission, so you can get professional support without an extra fee.</p>
-          <a href="#contacts" class="btn btn-primary btn-lg" data-i18n="fees.cta">Start Your Search</a>
+          <button type="button" class="btn btn-primary btn-lg js-open-lead-modal" aria-haspopup="dialog" data-i18n="fees.cta">Start Your Search</button>
         </div>
         <img class="photo photo-sm fees-photo" src="images/fees-jewelry.jpg" alt="Antique jewelry and china at a Tbilisi flea market" width="339" height="219" loading="lazy">
       </div>
@@ -495,6 +495,75 @@ about your next move.</p>
     </div>
   </div>
 </footer>
+
+<div class="modal-overlay" id="lead-modal" hidden>
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title">
+    <button type="button" class="modal-close" id="lead-modal-close" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+        <path d="M1 1l16 16M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <span class="form-tag" id="lead-modal-title" data-i18n="form.tag">Free Consultation &middot; No Obligation</span>
+
+    <form class="lead-form" id="modal-lead-form" name="lead-form" data-netlify="true" netlify-honeypot="bot-field" novalidate><input type="hidden" name="form-name" value="lead-form"><p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <div class="field-row">
+        <div class="field">
+          <label for="modal-name"><span data-i18n="form.name.label">Name</span> <span class="req">*</span></label>
+          <input type="text" id="modal-name" name="name" placeholder="Your name" data-i18n-placeholder="form.name.placeholder" required>
+        </div>
+        <div class="field">
+          <label for="modal-phone"><span data-i18n="form.phone.label">Phone / WhatsApp</span> <span class="req">*</span></label>
+          <input type="tel" id="modal-phone" name="phone" placeholder="+995 5XX XXX XXX" inputmode="numeric" required>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="modal-budget"><span data-i18n="form.budget.label">Budget</span> <span class="opt" data-i18n="form.optional">(optional)</span></label>
+          <select id="modal-budget" name="budget">
+            <option value="" selected data-i18n="form.budget.placeholder">Select your budget</option>
+            <option value="under-500" data-i18n="form.budget.opt1">Under $500 / month</option>
+            <option value="500-1000" data-i18n="form.budget.opt2">$500 – $1,000 / month</option>
+            <option value="1000-2000" data-i18n="form.budget.opt3">$1,000 – $2,000 / month</option>
+            <option value="2000-plus" data-i18n="form.budget.opt4">$2,000+ / month</option>
+            <option value="buy-under-100k" data-i18n="form.budget.opt5">Buy: under $100,000</option>
+            <option value="buy-100k-300k" data-i18n="form.budget.opt6">Buy: $100,000 – $300,000</option>
+            <option value="buy-300k-plus" data-i18n="form.budget.opt7">Buy: $300,000+</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="modal-looking-to"><span data-i18n="form.lookingTo.label">Looking To</span> <span class="opt" data-i18n="form.optional">(optional)</span></label>
+          <select id="modal-looking-to" name="looking-to">
+            <option value="" selected data-i18n="form.lookingTo.placeholder">Rent, buy or invest?</option>
+            <option value="rent" data-i18n="form.lookingTo.rent">Rent</option>
+            <option value="buy" data-i18n="form.lookingTo.buy">Buy</option>
+            <option value="invest" data-i18n="form.lookingTo.invest">Invest</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="modal-comment"><span data-i18n="form.comment.label">Comment</span> <span class="opt" data-i18n="form.optional">(optional)</span></label>
+        <textarea id="modal-comment" name="comment" rows="4" placeholder="Tell us what you are looking for" data-i18n-placeholder="form.comment.placeholder"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-submit" data-i18n="cta.findProperty">Find My Property</button>
+
+      <p class="privacy-note" data-i18n="form.privacy">We respect your privacy — your details are never shared with third parties.</p>
+    </form>
+
+    <div class="form-success" id="modal-lead-form-success" hidden>
+      <svg class="form-success-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" aria-hidden="true">
+        <circle cx="28" cy="28" r="27" stroke="currentColor" stroke-width="2"/>
+        <path d="M17 29l7 7 15-15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3 class="form-success-title" data-i18n="form.success.title">Thank You!</h3>
+      <p class="form-success-text" data-i18n="form.success.text">Your request has been sent. Our team will contact you shortly.</p>
+      <button type="button" class="btn form-success-btn" id="modal-lead-form-reset" data-i18n="form.success.btn">Send Another Request</button>
+    </div>
+  </div>
+</div>
 
 <script src="translations.js"></script>
 <script src="script.js"></script>
