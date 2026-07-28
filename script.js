@@ -159,8 +159,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!form) return;
 
+    var requiredFields = form.querySelectorAll('[required]');
+
+    function setFieldError(field, hasError) {
+      var wrapper = field.closest('.field');
+      if (!wrapper) return;
+
+      wrapper.classList.toggle('has-error', hasError);
+      if (hasError) field.setAttribute('aria-invalid', 'true');
+      else field.removeAttribute('aria-invalid');
+
+      var errorEl = wrapper.querySelector('.field-error');
+      if (errorEl) errorEl.hidden = !hasError;
+    }
+
+    requiredFields.forEach(function (field) {
+      field.addEventListener('input', function () { setFieldError(field, false); });
+    });
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+
+      var firstInvalid = null;
+      requiredFields.forEach(function (field) {
+        var isEmpty = !field.value.trim();
+        setFieldError(field, isEmpty);
+        if (isEmpty && !firstInvalid) firstInvalid = field;
+      });
+
+      if (firstInvalid) {
+        firstInvalid.focus();
+        return;
+      }
+
       var formData = new FormData(form);
       fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(formData).toString() })
         .then(function () {

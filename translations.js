@@ -39,7 +39,7 @@ window.RENTRY_I18N = {
     "reasons.footer": "Every neighborhood in Tbilisi has its own rhythm, character, and value — from the historic streets of Old Tbilisi to the city's most dynamic new districts.<br><br>Because finding the right property starts with finding the right place.",
 
     "fees.title": "No Client Fees",
-    "fees.lead": "Looking for a property in Tbilisi? Our service is free for you. The property owner pays our agency commission, so you can get professional support without an extra fee.",
+    "fees.lead": "Our service is free for you. The property owner pays our agency commission, so you can get professional support without an extra fee.",
     "fees.cta": "Start Your Search",
     "fees.footer": "Feel at home in Tbilisi. We'll take care of everything you need to settle in comfortably and make the most of your new life here.",
 
@@ -102,6 +102,7 @@ window.RENTRY_I18N = {
     "form.success.text": "Your request has been sent. Our team will contact you shortly.",
     "form.success.btn": "Send Another Request",
     "form.error": "Something went wrong, please try again or contact us via WhatsApp.",
+    "form.required": "This field is required.",
 
     "faq.title": "Common Questions",
     "faq.q1": "Do I pay a commission for your service?",
@@ -210,7 +211,7 @@ window.RENTRY_I18N = {
     "reasons.footer": "У каждого района Тбилиси свой ритм, характер и ценность — от исторических улиц Старого Тбилиси до самых динамичных новых районов города.<br><br>Ведь поиск подходящей недвижимости начинается с поиска подходящего места.",
 
     "fees.title": "Без комиссии для клиента",
-    "fees.lead": "Ищете недвижимость в Тбилиси? Наши услуги для вас бесплатны. Комиссию агентству выплачивает собственник, поэтому вы получаете профессиональную поддержку без дополнительных затрат.",
+    "fees.lead": "Наши услуги для вас бесплатны. Комиссию агентству выплачивает собственник, поэтому вы получаете профессиональную поддержку без дополнительных затрат.",
     "fees.cta": "Начать поиск",
     "fees.footer": "Почувствуйте себя как дома в Тбилиси. Мы возьмём на себя все хлопоты, чтобы вы могли с комфортом обустроиться и в полной мере насладиться новой жизнью здесь.",
 
@@ -273,6 +274,7 @@ window.RENTRY_I18N = {
     "form.success.text": "Ваша заявка отправлена. Наша команда свяжется с вами в ближайшее время.",
     "form.success.btn": "Отправить ещё одну заявку",
     "form.error": "Что-то пошло не так, попробуйте ещё раз или свяжитесь с нами через WhatsApp.",
+    "form.required": "Это поле обязательно для заполнения.",
 
     "faq.title": "Частые вопросы",
     "faq.q1": "Я плачу комиссию за ваши услуги?",
@@ -381,7 +383,7 @@ window.RENTRY_I18N = {
     "reasons.footer": "თბილისის თითოეულ უბანს თავისი რიტმი, ხასიათი და ღირებულება აქვს — ძველი თბილისის ისტორიული ქუჩებიდან ქალაქის ყველაზე დინამიურ ახალ უბნებამდე.<br><br>რადგან შესაფერისი უძრავი ქონების პოვნა შესაფერისი ადგილის პოვნით იწყება.",
 
     "fees.title": "მომსახურება კლიენტისთვის უფასოა",
-    "fees.lead": "ეძებთ უძრავ ქონებას თბილისში? ჩვენი მომსახურება თქვენთვის უფასოა. საკომისიოს გადაიხდის ქონების მესაკუთრე, ასე რომ პროფესიულ მხარდაჭერას იღებთ დამატებითი გადასახადის გარეშე.",
+    "fees.lead": "ჩვენი მომსახურება თქვენთვის უფასოა. საკომისიოს გადაიხდის ქონების მესაკუთრე, ასე რომ პროფესიულ მხარდაჭერას იღებთ დამატებითი გადასახადის გარეშე.",
     "fees.cta": "დაიწყე ძიება",
     "fees.footer": "იგრძენით თავი როგორც სახლში თბილისში. ჩვენ ვიზრუნებთ ყველაფერზე, რაც გჭირდებათ კომფორტულად მოსაწყობად და თქვენი ახალი ცხოვრებით სრულად დასატკბობად.",
 
@@ -444,6 +446,7 @@ window.RENTRY_I18N = {
     "form.success.text": "თქვენი მოთხოვნა გაიგზავნა. ჩვენი გუნდი მალე დაგიკავშირდებათ.",
     "form.success.btn": "ახალი მოთხოვნის გაგზავნა",
     "form.error": "დაფიქსირდა შეცდომა, სცადეთ ხელახლა ან დაგვიკავშირდით WhatsApp-ის საშუალებით.",
+    "form.required": "ეს ველი სავალდებულოა.",
 
     "faq.title": "ხშირად დასმული კითხვები",
     "faq.q1": "ვიხდი კომისიას თქვენი მომსახურებისთვის?",
