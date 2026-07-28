@@ -660,7 +660,7 @@ section[id]{ scroll-margin-top: 110px; }
 }
 
 .field-row{ display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
-.field-row .field{ margin-bottom: 0; }
+.field-row .field{ flex: 1 1 0; margin-bottom: 0; min-width: 0; }
 
 .field{ display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; }
 
@@ -685,6 +685,7 @@ section[id]{ scroll-margin-top: 110px; }
 .lead-form input,
 .lead-form select,
 .lead-form textarea{
+  width: 100%;
   background: #fff;
   border: 1px solid var(--c-line-input);
   color: var(--c-text-muted);
